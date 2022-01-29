@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class BaseClass extends Reuseaable_Annotations {
+    //start of class
 
     public BaseClass(WebDriver driver){
         PageFactory.initElements(driver,this);
@@ -14,7 +15,7 @@ public class BaseClass extends Reuseaable_Annotations {
     public static HomePage homepage(){
         HomePage homepage = new HomePage(driver);
         return  homepage;
-    }
+    }//end
 
     //create static reference for send mail and packages page
     public static SendMailAndPackages sendMailAndPackages(){
@@ -22,4 +23,4 @@ public class BaseClass extends Reuseaable_Annotations {
         return  sendMailAndPackages;
     }
 
-}
+}//end of class
