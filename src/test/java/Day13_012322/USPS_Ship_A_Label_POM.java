@@ -6,13 +6,13 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.testng.annotations.Test;
 
 public class USPS_Ship_A_Label_POM extends Reuseaable_Annotations {
-//test
     @Test
     public void USPS_Verify_Tabs_Then_Ship_A_Label(){
 
         //navigate to usps
         logger.log(LogStatus.INFO,"Navigating to USPS home page");
         driver.navigate().to("https://www.usps.com");
+        //end of line
 
         //verify the tabs count
         BaseClass.homepage().getNavigationTabsCount();
